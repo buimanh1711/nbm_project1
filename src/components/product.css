@@ -1,0 +1,101 @@
+.product-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product__container{
+    display: inline-flex;
+    height: 400px;
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.product-img{
+    width: 100%;
+}
+/* .-add{
+    align-items: center;
+} */
+.product{
+    border-radius: 5px;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+.add-btn{
+    background: rgb(51, 124, 118);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 3px;
+    margin-left: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: block;
+}
+.overlay{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(87, 83, 83, 0.568);
+    z-index: 1000;
+    display: none;
+}
+.product-info{
+    padding: 50px 50px;
+    width: 300px;
+    margin: 0 auto;
+    border: black 1px solid;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.product-info form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.product-info form input {
+    margin: 10px;
+    width: 100%;
+}
+.active{
+    display: block;
+}
+.submit-info-btn, .delete-btn{
+    width: 80px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.delete-btn{
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+}
+.edit-btn{
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    border: 1px solid black;
+    padding: 0px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}

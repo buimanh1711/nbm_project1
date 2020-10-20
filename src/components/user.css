@@ -1,0 +1,39 @@
+.sign-btn{
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(33, 80, 82);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.avt{
+    height: 30px; 
+    width: 30px;
+    background: black;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.user--login{
+    position: relative;
+}
+.sign_out{
+    position: absolute;
+    background: white;
+    height: 23px;
+    width: 100px;
+    color: black;
+    text-align: center;
+    border: 1px solid rgba(143, 136, 136, 0.671);
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+.user--on:hover .sign_out {
+    display: block;
+}
