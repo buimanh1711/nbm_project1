@@ -65,7 +65,7 @@ export default class Products extends Component {
                                 <input onChange ={ (e)=>{this.getName(e, this.newItem )} }id='product-name' placeholder='name' />
                                 <input  onChange ={ (e)=>{this.getPrice(e, this.newItem )} } id='product-price' placeholder='price' />
                                 <input name='img' type='file' onChange ={ (e)=>{this.getImg(e, this.newItem )} } id='product-img' placeholder='img'/>
-                                <button type ='submit' onClick={()=>this.updateProduct(this.newItem, this.editIndex)} >Submit</button>
+                                <button type ='submit' className='btn' onClick={()=>this.updateProduct(this.newItem, this.editIndex)} >Submit</button>
                             </form>
                         </div>
                     </div>
@@ -77,10 +77,10 @@ export default class Products extends Component {
                                     <div className='product__container' key={ index }>
                                         <div className='product'>
                                             <img src={item.img} className='product-img'/>
-                                            <p>{"name: " + item.name }</p>
-                                            <p>{"price: "+ item.price }</p>
-                                            <span className='delete-btn' onClick={ ()=>this.props.deleteProduct({index: index})}>Delete</span>
-                                            <span className='edit-btn' onClick = { this.editting.bind(this, index) } >Edit</span>
+                                            <p className='product-text'>{"name: " + item.name }</p>
+                                            <p className='product-text'>{"price: "+ item.price }</p>
+                                            <span className='delete-btn small-btn' onClick={ ()=>this.props.deleteProduct({index: index})}>Delete</span>
+                                            <span className='edit-btn small-btn' onClick = { this.editting.bind(this, index) } >Edit</span>
                                         </div>
                                     </div>
                                 )
@@ -89,8 +89,9 @@ export default class Products extends Component {
                                     <div className='product__container' key={ index }>
                                         <div className='product'>
                                             <img src={item.img} className='product-img'/>
-                                            <span>{"name: " + item.name }</span>
-                                            <span>{"price: "+ item.price }</span>
+                                            <p className='product-text'>{"name: " + item.name }</p>
+                                            <p className='product-text'>{"price: "+ item.price }</p>
+                                            <button className='buy-btn'>Add to cart</button>
                                         </div>
                                     </div> 
                                 )

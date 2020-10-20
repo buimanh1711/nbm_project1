@@ -9,7 +9,12 @@ body{
   height: 40vmin;
   pointer-events: none;
 }
-
+input {
+  padding: 5px;
+  border: 1px solid rgba(167, 157, 157, 0.548);
+  border-radius: 5px;
+  outline: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

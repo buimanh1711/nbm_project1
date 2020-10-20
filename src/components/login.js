@@ -49,13 +49,14 @@ export default class Login extends Component {
         return (
             <div className={loginClass}>
                 <div className='login-block'>
+                    <h1 className='title'>Login</h1>
                     <button onClick={ this.props.closeForm } className='close-btn'>X</button>
                     <form method='' className='login-form'>
                         <label htmlFor='username'>Username: </label>
                         <input id='username' name='username' placeholder='username' onChange={ (event)=>this.getUsername(event)} />
                         <label htmlFor='password'>Password: </label>
                         <input type='password' id='password' name='password' placeholder='password' onChange={ (event)=>this.getPassword(event)}/> 
-                        <span type='submit' className='login-btn' onClick={ () => { this.checkUser(users); window.location.reload(); } } >Login</span>
+                        <span type='submit' className='log-btn' onClick={ () => { this.checkUser(users); window.location.reload(); } } >Login</span>
                     </form>
                 </div>
             </div>

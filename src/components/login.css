@@ -20,6 +20,11 @@
     box-sizing: border-box;
     display: flex;
     z-index: 1000;
+    border-radius: 5px;
+}
+input {
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 .login-form{
     display: flex;
@@ -31,10 +36,14 @@
     height: 22px;
     padding-left: 10px;
 }
-.login-btn{
-    width: 30%;
-    margin: 10px auto;
-    padding: 10px 15px;
+.log-btn{
+    padding: 5px 20px;
+    background: rgb(98, 187, 194);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;    
+    margin-top: 30px;
 }
 .close-btn{
     position: absolute;
@@ -48,3 +57,11 @@
     right: 20px;
 }
 .active{ display: block;}
+.title{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    text-align: center;
+}

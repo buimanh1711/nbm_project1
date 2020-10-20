@@ -98,4 +98,46 @@
     padding: 0px 12px;
     border-radius: 3px;
     cursor: pointer;
+    
+}
+.small-btn{
+    padding: 5px 5px;
+    width: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background: rgb(64, 133, 165);
+}
+.btn {
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background: rgb(64, 133, 165);
+}
+.product-text {
+    display: block;
+    margin: 4px auto;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.buy-btn{
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(75, 149, 179);
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
 }
